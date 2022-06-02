@@ -4,10 +4,10 @@ import { BN } from '@project-serum/anchor'
 import { useRewardDistributorTokenAccount } from './useRewardDistributorTokenAccount'
 import { useUTCNow } from 'providers/UTCNowProvider'
 import { useRewardEntries } from './useRewardEntries'
-import { getRewardMap } from '@cardinal/staking'
+import { getRewardMap } from '../cardinal'
 import { useQuery } from 'react-query'
 import { useRewardMintInfo } from './useRewardMintInfo'
-import { RewardDistributorKind } from '@cardinal/staking/dist/cjs/programs/rewardDistributor'
+import { RewardDistributorKind } from '../cardinal/programs/rewardDistributor'
 
 export const useRewards = () => {
   const { data: rewardDistributorData } = useRewardDistributorData()

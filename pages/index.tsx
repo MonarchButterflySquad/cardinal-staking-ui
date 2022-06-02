@@ -99,61 +99,10 @@ function Home() {
             allStakePools.data.stakePoolsWithoutMetadata.length > 0 && (
               <>
                 <div className="mt-10 mb-5 text-lg font-bold">
-                  Unrecognized Pools
+                  
                 </div>
                 <div className="grid grid-cols-1 gap-5 md:grid-cols-4">
-                  {allStakePools.data.stakePoolsWithoutMetadata.map(
-                    (stakePool) => (
-                      <div
-                        className="flex h-[300px] cursor-pointer flex-col rounded-lg bg-white bg-opacity-5 p-10 transition-all duration-100 hover:scale-[1.01]"
-                        onClick={() =>
-                          router.push(
-                            `/${
-                              stakePool.stakePoolMetadata?.name ||
-                              stakePool.stakePoolData.pubkey.toString()
-                            }${
-                              environment.label !== 'mainnet-beta'
-                                ? `?cluster=${environment.label}`
-                                : ''
-                            }`
-                          )
-                        }
-                      >
-                        <div className="text-center font-bold text-white">
-                          <a
-                            className="text-white"
-                            target="_blank"
-                            rel="noreferrer"
-                            href={pubKeyUrl(
-                              stakePool.stakePoolData.pubkey,
-                              environment.label
-                            )}
-                          >
-                            {shortPubKey(stakePool.stakePoolData.pubkey)}
-                          </a>
-                        </div>
-                        <div className="text-gray text-center">
-                          <a
-                            className="text-xs text-gray-500"
-                            target="_blank"
-                            rel="noreferrer"
-                            href={pubKeyUrl(
-                              stakePool.stakePoolData.pubkey,
-                              environment.label
-                            )}
-                          >
-                            {shortPubKey(stakePool.stakePoolData.pubkey)}
-                          </a>
-                        </div>
-                        <div className="flex flex-grow items-center justify-center">
-                          <div className="flex h-[150px] w-[150px] items-center justify-center rounded-full bg-white bg-opacity-5 text-5xl text-white text-opacity-40">
-                            {/* {shortPubKey(stakePool.stakePoolData.pubkey)} */}
-                            <FaQuestion />
-                          </div>
-                        </div>
-                      </div>
-                    )
-                  )}
+
                 </div>
               </>
             )}

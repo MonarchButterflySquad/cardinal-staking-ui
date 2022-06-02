@@ -5,9 +5,9 @@ import { useQuery } from 'react-query'
 import { Connection, PublicKey } from '@solana/web3.js'
 import { AccountData } from '@cardinal/stake-pool'
 import * as metaplex from '@metaplex-foundation/mpl-token-metadata'
-import { StakeEntryData } from '@cardinal/staking/dist/cjs/programs/stakePool'
+import { StakeEntryData } from '../cardinal/programs/stakePool'
 import { TokenListData, useTokenList } from './useTokenList'
-import { getStakeEntriesForUser } from '@cardinal/staking/dist/cjs/programs/stakePool/accounts'
+import { getStakeEntriesForUser } from '../cardinal/programs/stakePool/accounts'
 import { getBatchedMultipleAccounts } from '@cardinal/common'
 
 export type StakeEntryTokenData = {

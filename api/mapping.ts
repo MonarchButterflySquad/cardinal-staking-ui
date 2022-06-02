@@ -39,10 +39,10 @@ export const defaultSecondaryColor = 'rgba(29, 78, 216, 255)'
 
 export const stakePoolMetadatas: StakePoolMetadata[] = [
   {
-    name: 'cardinal',
-    displayName: 'Cardinal',
+    name: 'RogueStar',
+    displayName: 'Rogue Star',
     stakePoolAddress: new PublicKey(
-      '2s3qXuGyMNedXS61Vi9XsRx7HuryyyZUYGyMtCrKUXva'
+      'Hj1xfWP4qYq7N6eJxFRFGqNDiwMFRMo361ay5rFUThbk'
     ),
     imageUrl: '/logo-colored.png',
     colors: {

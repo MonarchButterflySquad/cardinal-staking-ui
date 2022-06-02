@@ -1,10 +1,10 @@
 import { useEnvironmentCtx } from 'providers/EnvironmentProvider'
 import { AccountData } from '@cardinal/common'
 import { useRewardDistributorData } from './useRewardDistributorData'
-import { findRewardEntryId } from '@cardinal/staking/dist/cjs/programs/rewardDistributor/pda'
+import { findRewardEntryId } from '../cardinal/programs/rewardDistributor/pda'
 import { useStakedTokenDatas } from './useStakedTokenDatas'
-import { RewardEntryData } from '@cardinal/staking/dist/cjs/programs/rewardDistributor'
-import { getRewardEntries } from '@cardinal/staking/dist/cjs/programs/rewardDistributor/accounts'
+import { RewardEntryData } from '../cardinal/programs/rewardDistributor'
+import { getRewardEntries } from '../cardinal/programs/rewardDistributor/accounts'
 import { useQuery } from 'react-query'
 
 export const useRewardEntries = () => {
