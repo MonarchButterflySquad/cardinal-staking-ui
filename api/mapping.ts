@@ -44,10 +44,10 @@ export const stakePoolMetadatas: StakePoolMetadata[] = [
     stakePoolAddress: new PublicKey(
       'Hj1xfWP4qYq7N6eJxFRFGqNDiwMFRMo361ay5rFUThbk'
     ),
-    imageUrl: '/logo-colored.png',
+    imageUrl: '/RS.png',
     colors: {
-      primary: 'rgb(54,21,38,0.9)',
-      secondary: 'rgb(157,120,138, 0.6)',
+      primary: 'rgb(54,21,38,0)',
+      secondary: 'rgb(157,120,138, 0)',
     },
   },
 ]
