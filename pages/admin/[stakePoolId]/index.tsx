@@ -1,22 +1,22 @@
 import { tryGetAccount } from '@cardinal/common'
-import { executeTransaction, handleError } from '@cardinal/staking'
+import { executeTransaction, handleError } from '../../../cardinal'
 import {
   getRewardDistributor,
   getRewardEntry,
-} from '@cardinal/staking/dist/cjs/programs/rewardDistributor/accounts'
+} from '../../../cardinal/programs/rewardDistributor/accounts'
 import {
   findRewardDistributorId,
   findRewardEntryId,
-} from '@cardinal/staking/dist/cjs/programs/rewardDistributor/pda'
+} from '../../../cardinal/programs/rewardDistributor/pda'
 import {
   withCloseRewardDistributor,
   withInitRewardDistributor,
   withUpdateRewardEntry,
-} from '@cardinal/staking/dist/cjs/programs/rewardDistributor/transaction'
+} from '../../../cardinal/programs/rewardDistributor/transaction'
 import {
   withAuthorizeStakeEntry,
   withUpdateStakePool,
-} from '@cardinal/staking/dist/cjs/programs/stakePool/transaction'
+} from '../../../cardinal/programs/stakePool/transaction'
 import { Wallet } from '@metaplex/js'
 import { BN } from '@project-serum/anchor'
 import { useWallet } from '@solana/wallet-adapter-react'
@@ -33,7 +33,7 @@ import { TailSpin } from 'react-loader-spinner'
 import { CreationForm, StakePoolForm } from 'components/StakePoolForm'
 import { useRewardDistributorData } from 'hooks/useRewardDistributorData'
 import { tryPublicKey } from 'common/utils'
-import { findStakeEntryIdFromMint } from '@cardinal/staking/dist/cjs/programs/stakePool/utils'
+import { findStakeEntryIdFromMint } from '../../../cardinal/programs/stakePool/utils'
 import * as Yup from 'yup'
 import { useFormik } from 'formik'
 import { getMintDecimalAmountFromNatural } from 'common/units'

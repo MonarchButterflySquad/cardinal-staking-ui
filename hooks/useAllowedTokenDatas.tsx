@@ -6,13 +6,13 @@ import {
   StakeAuthorizationData,
   StakeEntryData,
   StakePoolData,
-} from '@cardinal/staking/dist/cjs/programs/stakePool'
+} from '../cardinal/programs/stakePool'
 import * as spl from '@solana/spl-token'
 import * as metaplex from '@metaplex-foundation/mpl-token-metadata'
-import { findStakeEntryIdFromMint } from '@cardinal/staking/dist/cjs/programs/stakePool/utils'
+import { findStakeEntryIdFromMint } from '../cardinal/programs/stakePool/utils'
 import { useEnvironmentCtx } from 'providers/EnvironmentProvider'
 import { AccountInfo, ParsedAccountData, PublicKey } from '@solana/web3.js'
-import { getStakeEntries } from '@cardinal/staking/dist/cjs/programs/stakePool/accounts'
+import { getStakeEntries } from '../cardinal/programs/stakePool/accounts'
 import { useQuery } from 'react-query'
 import { useWalletId } from './useWalletId'
 import { TokenListData, useTokenList } from './useTokenList'

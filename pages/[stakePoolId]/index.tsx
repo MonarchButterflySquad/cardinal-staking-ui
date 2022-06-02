@@ -3,8 +3,8 @@ import {
   stake,
   unstake,
   claimRewards,
-} from '@cardinal/staking'
-import { ReceiptType } from '@cardinal/staking/dist/cjs/programs/stakePool'
+} from '../../cardinal'
+import { ReceiptType } from '../../cardinal/programs/stakePool'
 import { useWallet } from '@solana/wallet-adapter-react'
 import { PublicKey, Signer, Transaction } from '@solana/web3.js'
 import { Header } from 'common/Header'
@@ -50,7 +50,7 @@ import { MouseoverTooltip } from 'common/Tooltip'
 import { useUTCNow } from 'providers/UTCNowProvider'
 import { useWalletModal } from '@solana/wallet-adapter-react-ui'
 import { executeAllTransactions } from 'api/utils'
-import { RewardDistributorKind } from '@cardinal/staking/dist/cjs/programs/rewardDistributor'
+import { RewardDistributorKind } from '../../cardinal/programs/rewardDistributor'
 
 function Home() {
   const { connection, environment } = useEnvironmentCtx()

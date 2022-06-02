@@ -1,7 +1,7 @@
 import { AccountData, getBatchedMultipleAccounts } from '@cardinal/common'
 import { scan } from '@cardinal/scanner/dist/cjs/programs/cardinalScanner'
-import { StakePoolData } from '@cardinal/staking/dist/cjs/programs/stakePool'
-import { getStakePool } from '@cardinal/staking/dist/cjs/programs/stakePool/accounts'
+import { StakePoolData } from '../../cardinal/programs/stakePool'
+import { getStakePool } from '../../cardinal/programs/stakePool/accounts'
 import { utils } from '@project-serum/anchor'
 import {
   AccountInfo,

@@ -5,7 +5,7 @@ import {
 import {
   RewardDistributorData,
   RewardDistributorKind,
-} from '@cardinal/staking/dist/cjs/programs/rewardDistributor'
+} from '../cardinal/programs/rewardDistributor'
 import { Wallet } from '@metaplex/js'
 import { BN } from '@project-serum/anchor'
 import { useWallet } from '@solana/wallet-adapter-react'
@@ -21,9 +21,9 @@ import { FormFieldTitleInput } from 'common/FormFieldInput'
 import * as Yup from 'yup'
 import { tryPublicKey } from 'common/utils'
 import { useFormik } from 'formik'
-import { StakePoolData } from '@cardinal/staking/dist/cjs/programs/stakePool'
+import { StakePoolData } from '../cardinal/programs/stakePool'
 import { FormInput } from 'common/FormInput'
-import { executeTransaction, handleError } from '@cardinal/staking'
+import { executeTransaction, handleError } from '../cardinal/'
 import { tryFormatAmountAsInput, tryParseInputAsAmount } from 'common/units'
 
 const publicKeyValidationTest = (value: string | undefined): boolean => {

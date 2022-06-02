@@ -5,7 +5,7 @@ import {
   StakePoolData,
   STAKE_POOL_ADDRESS,
   STAKE_POOL_IDL,
-} from '@cardinal/staking/dist/cjs/programs/stakePool'
+} from '../cardinal/programs/stakePool'
 import { useQuery } from 'react-query'
 import { Connection, PublicKey } from '@solana/web3.js'
 import { BorshAccountsCoder, utils } from '@project-serum/anchor'

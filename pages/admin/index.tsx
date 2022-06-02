@@ -2,8 +2,8 @@ import {
   createStakePool,
   executeTransaction,
   handleError,
-} from '@cardinal/staking'
-import { withInitRewardDistributor } from '@cardinal/staking/dist/cjs/programs/rewardDistributor/transaction'
+} from '../../cardinal'
+import { withInitRewardDistributor } from '../../cardinal/programs/rewardDistributor/transaction'
 import { Wallet } from '@metaplex/js'
 import { BN } from '@project-serum/anchor'
 import { useWallet } from '@solana/wallet-adapter-react'
